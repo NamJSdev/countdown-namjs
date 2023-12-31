@@ -463,7 +463,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("timer").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
 
         // Check if the countdown has reached zero
-        if (difference <= 0) {
+        if (difference > 0) {
             // Stop the countdown
             clearInterval(countdownInterval);
 
